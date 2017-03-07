@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mail: MyString
+  api_key: MyString
+  times_used: 1
+
+two:
+  mail: MyString
+  api_key: MyString
+  times_used: 1
