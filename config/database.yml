@@ -20,10 +20,16 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
+  database: word_counter_development
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
+  prepared_statements: false
 
 development:
   <<: *default
-  database: word_counter_development
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -82,4 +88,4 @@ production:
   <<: *default
   database: word_counter_production
   username: word_counter
-  password: <%= ENV['WORD_COUNTER_DATABASE_PASSWORD'] %>
+  password: ff5b13adc8b25719d069e3ee0bb7e5873f13ec5226bb09e61519ec59d967933e
