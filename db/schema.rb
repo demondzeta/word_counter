@@ -19,9 +19,9 @@ ActiveRecord::Schema.define(version: 20170307210324) do
   create_table "api_keys", force: :cascade do |t|
     t.string   "mail"
     t.string   "api_key"
-    t.integer  "times_used"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "times_used", default: 0
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
