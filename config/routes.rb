@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :api_keys, only: [:index, :new, :destroy]
+  resources :api_keys, only: [:index, :new, :create, :destroy]
   get 'find_duplicates' => 'duplicates#index', constraints: { format: :json }
    root 'api_keys#index'
   # The priority is based upon order of creation: first created -> highest priority.
