@@ -2,7 +2,7 @@
 
 <h1>Listing Api Keys</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Mail</th>
@@ -18,7 +18,7 @@
         <td><%= api_key.mail %></td>
         <td><%= api_key.api_key %></td>
         <td><%= api_key.times_used %></td>
-        <td><%= link_to 'Destroy', api_key, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', api_key, class: "btn btn-danger",  method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -11,11 +11,13 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-grou">
     <%= f.label :mail %><br>
-    <%= f.text_field :mail %>
+    <%= f.text_field :mail, class: "form-control" %>
   </div>
+  <br>
+  
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Guardar", class: "btn btn-primary" %>
   </div>
 <% end %>
