@@ -1,7 +1,8 @@
 == README
+## Words Counter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+App for getting words repeated and its indexes on an array. 
+
 sites url: https://salty-tundra-81993.herokuapp.com
 api url: https://salty-tundra-81993.herokuapp.com/find_duplicates
 
